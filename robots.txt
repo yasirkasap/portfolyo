@@ -1,0 +1,11 @@
+# Yasir Kasap - Game Developer Portfolio
+# https://yasirkasap.com
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://yasirkasap.com/sitemap.xml
+
+# Crawl-delay (optional, reduces server load)
+Crawl-delay: 1
