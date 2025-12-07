@@ -78,7 +78,7 @@ Bu proje [MIT Lisansı](LICENSE) altında lisanslanmıştır.
 Game Developer & Unreal Engine Specialist
 
 - 🔗 [GitHub](https://github.com/yasirkasap)
-- 💼 [LinkedIn](https://linkedin.com/in/yasirkasap)
+- 💼 [LinkedIn](https://www.linkedin.com/in/yasirkasap/)
 
 ---
 
