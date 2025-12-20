@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim - Yasir Kasap | Contact Game Developer</title>
+    <meta name="description"
+        content="Yasir Kasap ile iletişime geçin. Oyun geliştirme projeleri, iş birlikleri, freelance işler ve danışmanlık için.">
+    <meta name="keywords"
+        content="contact game developer, yasir kasap contact, game development inquiry, unreal engine consultant">
+    <meta name="author" content="Yasir Kasap">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yasirkasap.com/iletisim.html">
+    <meta property="og:title" content="İletişim - Yasir Kasap">
+    <meta property="og:description"
+        content="Oyun geliştirme projeleri, iş birlikleri ve danışmanlık için iletişime geçin.">
+    <meta property="og:image" content="https://yasirkasap.com/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://yasirkasap.com/iletisim.html">
+    <meta property="twitter:title" content="İletişim - Yasir Kasap">
+    <meta property="twitter:description"
+        content="Oyun geliştirme projeleri, iş birlikleri ve danışmanlık için iletişime geçin.">
+    <meta property="twitter:image" content="https://yasirkasap.com/og-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="favicon.jpg">
+    <link rel="alternate icon" href="favicon.ico">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <img src="favicon.jpg" alt="Yasir Kasap Logo">
+                <div class="logo-text">
+                    <h1>YASIR KASAP</h1>
+                    <p class="tagline">Game Developer | Unreal Engine Specialist</p>
+                </div>
+            </div>
+            <input type="checkbox" id="hamburger-toggle" class="hamburger-toggle">
+            <label for="hamburger-toggle" class="hamburger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link">ANASAYFA</a>
+                <div class="dropdown">
+                    <a href="projeler.html" class="nav-link locked-content-trigger" data-game-type="basket">PROJELER</a>
+                    <div class="dropdown-content">
+                        <!-- Dropdown content same as other pages -->
+                    </div>
+                </div>
+                <a href="hakkimda.html" class="nav-link">HAKKIMDA</a>
+                <!-- Blog link removed -->
+                <a href="iletisim.html" class="nav-link active">İLETİŞİM</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-slider" style="height: 350px;">
+        <div class="hero-slide">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h2>İletişim</h2>
+                <p>Projeleriniz ve iş birliği fırsatları için benimle iletişime geçin</p>
+            </div>
+        </div>
+    </section>
+
+    <main class="main-container" style="display: block; max-width: 1000px;">
+        <div
+            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; margin-bottom: 60px;">
+            <!-- Contact Form -->
+            <section class="locked-section" style="position: relative; min-height: 500px;">
+                <h2 class="section-title">Mesaj Gönderin</h2>
+
+                <!-- Lock Overlay -->
+                <div class="locked-overlay" style="
+                    background: rgba(15, 23, 42, 0.95);
+                    border: 1px solid var(--border);
+                    border-radius: 12px;
+                    padding: 40px;
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 20px;
+                    height: 400px;
+                ">
+                    <div style="font-size: 64px;">🛡️</div>
+                    <h3 style="color: #ef4444; font-family: 'Rajdhani'; font-size: 24px;">GÜVENLİK PROTOKOLÜ</h3>
+                    <p style="color: #94a3b8; max-width: 300px;">İletişim kanalını açmak için bağlantı kablolarını
+                        onarın.</p>
+                    <button class="submit-btn locked-content-trigger" data-game-type="wire" href="#"
+                        style="width: auto; background: #ef4444;">BAĞLANTIYI ONAR</button>
+                </div>
+
+                <!-- Hidden Content -->
+                <div class="hidden-content" style="display: none;">
+                    <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                        <div class="form-group">
+                            <label for="name">Ad Soyad *</label>
+                            <input type="text" id="name" name="name" required placeholder="Adınız ve soyadınız">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-posta *</label>
+                            <input type="email" id="email" name="_replyto" required placeholder="ornek@email.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Konu *</label>
+                            <input type="text" id="subject" name="_subject" required placeholder="Mesajınızın konusu">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Mesajınız *</label>
+                            <textarea id="message" name="message" required
+                                placeholder="Mesajınızı buraya yazın..."></textarea>
+                        </div>
+
+                        <!-- Honeypot for spam protection -->
+                        <input type="text" name="_gotcha" style="display:none">
+
+                        <button type="submit" class="submit-btn">GÖNDER</button>
+
+                        <p style="color:var(--text-muted); font-size:12px; margin-top:15px; text-align:center;">
+                            * Formspree.io üzerinden ücretsiz email gönderimi.
+                        </p>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Contact Info -->
+            <section>
+                <h2 class="section-title">İletişim Bilgileri</h2>
+                <div class="sidebar-section">
+                    <div style="margin-bottom:30px;">
+                        <h3
+                            style="color:var(--primary); font-family:var(--font-heading); font-size:18px; margin-bottom:10px;">
+                            📧 E-posta</h3>
+                        <a href="mailto:yasirkasapp@gmail.com" style="color:var(--text-main); text-decoration:none;">
+                            yasirkasapp@gmail.com
+                        </a>
+                        <p style="color:var(--text-muted); font-size:13px; margin-top:5px;">
+                            İş teklifleri ve işbirliği için
+                        </p>
+                    </div>
+
+                    <div style="margin-bottom:30px;">
+                        <h3
+                            style="color:var(--primary); font-family:var(--font-heading); font-size:18px; margin-bottom:10px;">
+                            💼 LinkedIn</h3>
+                        <a href="https://www.linkedin.com/in/yasirkasap/" target="_blank"
+                            style="color:var(--text-main); text-decoration:none;">
+                            linkedin.com/in/yasirkasap/
+                        </a>
+                        <p style="color:var(--text-muted); font-size:13px; margin-top:5px;">
+                            Profesyonel network
+                        </p>
+                    </div>
+
+                    <div style="margin-bottom:30px;">
+                        <h3
+                            style="color:var(--primary); font-family:var(--font-heading); font-size:18px; margin-bottom:10px;">
+                            🔗 GitHub</h3>
+                        <a href="https://github.com/yasirkasap" target="_blank"
+                            style="color:var(--text-main); text-decoration:none;">
+                            github.com/yasirkasap
+                        </a>
+                        <p style="color:var(--text-muted); font-size:13px; margin-top:5px;">
+                            Açık kaynak projeler ve kod örnekleri
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3
+                            style="color:var(--primary); font-family:var(--font-heading); font-size:18px; margin-bottom:10px;">
+                            🎬 YouTube</h3>
+                        <a href="https://www.youtube.com/@kasapoyun" target="_blank"
+                            style="color:var(--text-main); text-decoration:none;">
+                            @kasapoyun
+                        </a>
+                        <p style="color:var(--text-muted); font-size:13px; margin-top:5px;">
+                            Oyun geliştirme videoları ve tutoriallar
+                        </p>
+                    </div>
+                </div>
+
+                <div class="sidebar-section" style="margin-top: 20px; border-color: var(--secondary);">
+                    <h3
+                        style="color:var(--secondary); font-family:var(--font-heading); font-size:18px; margin-bottom:10px;">
+                        💡 İş Birliği Fırsatları</h3>
+                    <p style="color:var(--text-muted); font-size:14px;">
+                        Yeni projeler, freelance işler, eğitim işbirlikleri ve mentorluk için açığım.
+                        Oyun geliştirme, Unreal Engine danışmanlığı veya teknik yazarlık konularında
+                        birlikte çalışabiliriz.
+                    </p>
+                </div>
+            </section>
+        </div>
+
+        <!-- Quick Links -->
+        <section class="showcase-section"
+            style="text-align:center; padding: 40px; border: 1px solid var(--border); border-radius: 12px;">
+            <h3 style="color:var(--text-main); margin-bottom:20px; font-family:var(--font-heading);">Daha Fazla Keşfet
+            </h3>
+            <div style="display:flex; gap:15px; justify-content:center; flex-wrap:wrap;">
+                <a href="projeler.html" class="nav-link" style="font-size: 14px; border: 1px solid var(--border);">
+                    📁 Projelerimi İncele
+                </a>
+                <a href="hakkimda.html" class="nav-link" style="font-size: 14px; border: 1px solid var(--border);">
+                    👤 Hakkımda
+                </a>
+                <a href="index.html#blog" class="nav-link" style="font-size: 14px; border: 1px solid var(--border);">
+                    📝 Blog Yazıları
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p>&copy; 2025 Yasir Kasap | Game Developer</p>
+        </div>
+    </footer>
+    <script src="game.js"></script>
+</body>
+
+</html>

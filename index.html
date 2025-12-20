@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yasir Kasap | Game Developer & Unreal Engine Specialist</title>
+    <meta name="description"
+        content="Profesyonel game developer ve Unreal Engine uzmanı. AAA ve indie projeler, multiplayer networking, AI sistemleri ve oyun geliştirme üzerine blog yazıları.">
+    <meta name="keywords"
+        content="game developer, unreal engine, oyun geliştirme, c++, blueprint, multiplayer, game design, yasir kasap">
+    <meta name="author" content="Yasir Kasap">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yasirkasap.com/">
+    <meta property="og:title" content="Yasir Kasap | Game Developer & Unreal Engine Specialist">
+    <meta property="og:description"
+        content="Profesyonel game developer ve Unreal Engine uzmanı. AAA ve indie projeler, multiplayer networking, AI sistemleri.">
+    <meta property="og:image" content="https://yasirkasap.com/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://yasirkasap.com/">
+    <meta property="twitter:title" content="Yasir Kasap | Game Developer & Unreal Engine Specialist">
+    <meta property="twitter:description"
+        content="Profesyonel game developer ve Unreal Engine uzmanı. AAA ve indie projeler, multiplayer networking, AI sistemleri.">
+    <meta property="twitter:image" content="https://yasirkasap.com/og-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="favicon.jpg">
+    <link rel="alternate icon" href="favicon.ico">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Üst Navigation Bar -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <img src="favicon.jpg" alt="Yasir Kasap Logo">
+                <div class="logo-text">
+                    <h1>YASIR KASAP</h1>
+                    <p class="tagline">Game Developer | Unreal Engine Specialist</p>
+                </div>
+            </div>
+            <input type="checkbox" id="hamburger-toggle" class="hamburger-toggle">
+            <label for="hamburger-toggle" class="hamburger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav class="main-nav">
+                <a href="#anasayfa" class="nav-link active">ANASAYFA</a>
+                <div class="dropdown">
+                    <a href="projeler.html" class="nav-link locked-content-trigger" data-game-type="basket">PROJELER</a>
+                    <div class="dropdown-content">
+                        <div class="mega-menu">
+                            <div class="mega-column">
+                                <h3>Unreal Engine 5</h3>
+                                <a href="#ue5-rpg">RPG Oyun Projesi</a>
+                                <a href="#ue5-fps">FPS Multiplayer</a>
+                                <a href="#ue5-horror">Horror Adventure</a>
+                                <a href="#ue5-vr">VR Experience</a>
+                            </div>
+                            <div class="mega-column">
+                                <h3>Unity Projeleri</h3>
+                                <a href="#unity-mobile">Mobile Puzzle Game</a>
+                                <a href="#unity-2d">2D Platform Oyunu</a>
+                                <a href="#unity-ar">AR Uygulaması</a>
+                            </div>
+                            <div class="mega-column">
+                                <h3>Bağımsız Çalışmalar</h3>
+                                <a href="#indie-1">Open World RPG</a>
+                                <a href="#indie-2">Narrative Adventure</a>
+                                <a href="#indie-3">Roguelike Dungeon</a>
+                            </div>
+                            <div class="mega-column">
+                                <h3>Eğitim İçerikleri</h3>
+                                <a href="#tutorial-1">Blueprint Temelleri</a>
+                                <a href="#tutorial-2">C++ ile Gameplay</a>
+                                <a href="#tutorial-3">Lighting & VFX</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="hakkimda.html" class="nav-link">HAKKIMDA</a>
+                <!-- Blog link removed -->
+                <a href="iletisim.html" class="nav-link">İLETİŞİM</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section / Slider -->
+    <section class="hero-slider">
+        <div class="hero-slide active-slide" style="background-image: url('assets/images/slider1.png');">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h2>Unreal Engine 5 ile Yeni Nesil Oyunlar</h2>
+                <p>Nanite, Lumen ve diğer cutting-edge teknolojilerle gerçekçi oyun deneyimleri yaratıyorum</p>
+            </div>
+        </div>
+        <div class="hero-slide" style="background-image: url('assets/images/slider2.png');">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h2>Hayal Gücünün Sınırlarını Zorla</h2>
+                <p>Oyun geliştirme tutkusu ile fantastik dünyalar inşa ediyorum</p>
+            </div>
+        </div>
+        <div class="hero-slide" style="background-image: url('assets/images/slider3.png');">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h2>Advanced Tech, Ultimate Performance</h2>
+                <p>Optimize edilmiş kod yapısı ve state-of-the-art grafik teknolojileri</p>
+            </div>
+        </div>
+        <div class="hero-slide" style="background-image: url('assets/images/slider4.png');">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h2>Ancient Mysteries, Modern Tools</h2>
+                <p>Geçmişin estetiğini geleceğin teknolojisiyle buluşturuyorum</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ana Container -->
+    <div class="main-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Kategoriler</h3>
+                <ul class="sidebar-menu">
+                    <li><a href="#unreal-engine">🎮 Unreal Engine</a></li>
+                    <li><a href="#game-design">🎨 Game Design</a></li>
+                    <li><a href="#blueprint">📘 Blueprint</a></li>
+                    <li><a href="#cpp">💻 C++ Programming</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Popüler Yazılar</h3>
+                <ul class="sidebar-menu">
+                    <li><a href="#popular-1">UE5'te Lumen Kullanımı</a></li>
+                    <li><a href="#popular-2">Optimizasyon Teknikleri</a></li>
+                    <li><a href="#popular-3">Multiplayer Networking</a></li>
+                    <li><a href="#popular-4">AI Behavior Trees</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Takip Et</h3>
+                <ul class="sidebar-menu">
+                    <li><a href="#github">🔗 GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/yasirkasap/" target="_blank">🔗 LinkedIn</a></li>
+                    <li><a href="https://www.youtube.com/@kasapoyun" target="_blank">🎬 YouTube</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-widget">
+                <h3 class="sidebar-title">İstatistikler</h3>
+                <div class="stats">
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Proje</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Yıl Deneyim</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100+</span>
+                        <span class="stat-label">Blog Yazısı</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Ana İçerik -->
+        <main class="content">
+            <div class="content-header">
+                <h2 class="section-title">Son Blog Yazıları</h2>
+                <p class="section-subtitle">Oyun geliştirme, Unreal Engine ve game design üzerine yazılarım</p>
+            </div>
+
+            <!-- Blog Post 1 -->
+            <article class="blog-post featured">
+                <div class="post-thumbnail">
+                    <div class="thumbnail-placeholder">
+                        <span class="thumbnail-icon">🎮</span>
+                    </div>
+                    <span class="post-badge">Öne Çıkan</span>
+                </div>
+                <div class="post-content">
+                    <div class="post-meta">
+                        <span class="post-category">Unreal Engine 5</span>
+                        <span class="post-date">10 Kasım 2025</span>
+                        <span class="post-read-time">8 dakika okuma</span>
+                    </div>
+                    <h3 class="post-title">Unreal Engine 5.4'te Nanite ve Lumen ile Photorealistic Ortamlar Yaratmak
+                    </h3>
+                    <p class="post-excerpt">
+                        Unreal Engine 5'in devrim niteliğindeki Nanite ve Lumen teknolojileri, oyun geliştirmede yeni
+                        bir çağ başlattı.
+                        Bu yazıda, bu güçlü araçları kullanarak nasıl gerçeğe yakın ortamlar oluşturabileceğinizi
+                        detaylı bir şekilde anlatıyorum.
+                        Milyonlarca poligonlu modelleri optimize etmeden kullanma, gerçek zamanlı global illumination ve
+                        reflection'lar...
+                    </p>
+                    <div class="post-tags">
+                        <span class="tag">#UnrealEngine</span>
+                        <span class="tag">#Nanite</span>
+                        <span class="tag">#Lumen</span>
+                        <span class="tag">#NextGen</span>
+                    </div>
+                    <a href="blog-detay.html" class="read-more locked-content-trigger" data-game-type="bug">🔒 Kodu Çöz
+                        ve Oku →</a>
+                </div>
+            </article>
+
+            <!-- Blog Post 2 -->
+            <article class="blog-post">
+                <div class="post-thumbnail">
+                    <div class="thumbnail-placeholder">
+                        <span class="thumbnail-icon">🧩</span>
+                    </div>
+                </div>
+                <div class="post-content">
+                    <div class="post-meta">
+                        <span class="post-category">Blueprint</span>
+                        <span class="post-date">8 Kasım 2025</span>
+                        <span class="post-read-time">12 dakika okuma</span>
+                    </div>
+                    <h3 class="post-title">Blueprint'ten C++'a Geçiş: Profesyonel Oyun Geliştirme İçin Temel Adımlar
+                    </h3>
+                    <p class="post-excerpt">
+                        Blueprint visual scripting harika bir başlangıç noktası ama karmaşık sistemler için C++
+                        şart. Bu
+                        rehberde,
+                        Blueprint'te oluşturduğunuz sistemleri C++'a nasıl taşıyacağınızı, performans
+                        optimizasyonlarını
+                        ve
+                        best practice'leri öğreneceksiniz. Actor Component'lerden Game Mode'lara kadar her şey...
+                    </p>
+                    <div class="post-tags">
+                        <span class="tag">#C++</span>
+                        <span class="tag">#Blueprint</span>
+                        <span class="tag">#Performance</span>
+                        <span class="tag">#Tutorial</span>
+                    </div>
+                    <a href="#post-2" class="read-more">Devamını Oku →</a>
+                </div>
+            </article>
+
+            <!-- Blog Post 3 -->
+            <article class="blog-post">
+                <div class="post-thumbnail">
+                    <div class="thumbnail-placeholder">
+                        <span class="thumbnail-icon">🤖</span>
+                    </div>
+                </div>
+                <div class="post-content">
+                    <div class="post-meta">
+                        <span class="post-category">AI & Gameplay</span>
+                        <span class="post-date">5 Kasım 2025</span>
+                        <span class="post-read-time">15 dakika okuma</span>
+                    </div>
+                    <h3 class="post-title">Behavior Tree ve Blackboard ile Gelişmiş AI Sistemleri Oluşturmak</h3>
+                    <p class="post-excerpt">
+                        Akıllı ve reaktif düşman AI'ları modern oyunların olmazsa olmazı. Bu detaylı tutorial'da Unreal
+                        Engine'in
+                        Behavior Tree sistemini kullanarak nasıl karmaşık AI davranışları oluşturabileceğinizi
+                        gösteriyorum.
+                        Patrol sistemlerinden dinamik combat stratejilerine, EQS kullanımından perception sistemlerine
+                        kadar...
+                    </p>
+                    <div class="post-tags">
+                        <span class="tag">#AI</span>
+                        <span class="tag">#BehaviorTree</span>
+                        <span class="tag">#GameplayProgramming</span>
+                    </div>
+                    <a href="#post-3" class="read-more">Devamını Oku →</a>
+                </div>
+            </article>
+
+            <!-- Blog Post 4 -->
+            <article class="blog-post">
+                <div class="post-thumbnail">
+                    <div class="thumbnail-placeholder">
+                        <span class="thumbnail-icon">🌐</span>
+                    </div>
+                </div>
+                <div class="post-content">
+                    <div class="post-meta">
+                        <span class="post-category">Multiplayer</span>
+                        <span class="post-date">2 Kasım 2025</span>
+                        <span class="post-read-time">20 dakika okuma</span>
+                    </div>
+                    <h3 class="post-title">Unreal Engine'de Multiplayer Networking: Client-Server Architecture Deep Dive
+                    </h3>
+                    <p class="post-excerpt">
+                        Online multiplayer oyunlar yapmak istiyorsanız, networking kavramlarını derinlemesine anlamanız
+                        gerekiyor.
+                        Bu comprehensive guide'da replication, RPC'ler, network relevancy, client prediction, server
+                        reconciliation
+                        ve lag compensation gibi kritik konuları ele alıyorum. Dedicated server setup'tan matchmaking'e
+                        kadar...
+                    </p>
+                    <div class="post-tags">
+                        <span class="tag">#Multiplayer</span>
+                        <span class="tag">#Networking</span>
+                        <span class="tag">#OnlineSubsystem</span>
+                    </div>
+                    <a href="#post-4" class="read-more">Devamını Oku →</a>
+                </div>
+            </article>
+
+            <!-- Blog Post 5 -->
+            <article class="blog-post">
+                <div class="post-thumbnail">
+                    <div class="thumbnail-placeholder">
+                        <span class="thumbnail-icon">✨</span>
+                    </div>
+                </div>
+                <div class="post-content">
+                    <div class="post-meta">
+                        <span class="post-category">VFX & Materials</span>
+                        <span class="post-date">28 Ekim 2025</span>
+                        <span class="post-read-time">10 dakika okuma</span>
+                    </div>
+                    <h3 class="post-title">Material Editor'de Procedural Texturing ve Advanced Shader Teknikleri</h3>
+                    <p class="post-excerpt">
+                        Unreal Engine'in güçlü Material Editor'ü ile inanılmaz görseller yaratabilirsiniz. Bu yazıda,
+                        procedural noise kullanımı, parallax occlusion mapping, vertex animation, master material
+                        setup'lar
+                        ve performans optimizasyonu gibi advanced material tekniklerini öğreneceksiniz. Niagara ile
+                        entegrasyon...
+                    </p>
+                    <div class="post-tags">
+                        <span class="tag">#Materials</span>
+                        <span class="tag">#VFX</span>
+                        <span class="tag">#Shaders</span>
+                        <span class="tag">#Niagara</span>
+                    </div>
+                    <a href="#post-5" class="read-more">Devamını Oku →</a>
+                </div>
+            </article>
+
+            <!-- Blog Post 6 -->
+            <article class="blog-post">
+                <div class="post-thumbnail">
+                    <div class="thumbnail-placeholder">
+                        <span class="thumbnail-icon">⚙️</span>
+                    </div>
+                </div>
+                <div class="post-content">
+                    <div class="post-meta">
+                        <span class="post-category">Optimization</span>
+                        <span class="post-date">25 Ekim 2025</span>
+                        <span class="post-read-time">18 dakika okuma</span>
+                    </div>
+                    <h3 class="post-title">Oyun Performansını Optimize Etme: Profiling'den Shipping Build'e Kapsamlı
+                        Kılavuz</h3>
+                    <p class="post-excerpt">
+                        60 FPS'te çalışan smooth bir oyun deneyimi sunmak için optimizasyon şart. Bu kapsamlı rehberde,
+                        Unreal Insights kullanımı, GPU ve CPU profiling, LOD sistemleri, occlusion culling, texture
+                        streaming,
+                        garbage collection optimizasyonları ve console-specific optimizasyon teknikleri detaylı
+                        anlatıyorum...
+                    </p>
+                    <div class="post-tags">
+                        <span class="tag">#Performance</span>
+                        <span class="tag">#Optimization</span>
+                        <span class="tag">#Profiling</span>
+                    </div>
+                    <a href="#post-6" class="read-more">Devamını Oku →</a>
+                </div>
+            </article>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <a href="#" class="page-link active">1</a>
+                <a href="#" class="page-link">2</a>
+                <a href="#" class="page-link">3</a>
+                <a href="#" class="page-link">4</a>
+                <a href="#" class="page-link">5</a>
+                <a href="#" class="page-link">Sonraki →</a>
+            </div>
+        </main>
+    </div>
+
+    <!-- Proje Showcase Section -->
+    <section class="showcase-section">
+        <h2 class="section-title-center">Son Projeler</h2>
+        <div class="showcase-grid">
+            <div class="showcase-item">
+                <div class="showcase-thumbnail">
+                    <span class="showcase-icon">🎯</span>
+                </div>
+                <h3>Cyberpunk RPG</h3>
+                <p>Unreal Engine 5 ile geliştirilmiş açık dünya RPG oyunu</p>
+            </div>
+            <div class="showcase-item">
+                <div class="showcase-thumbnail">
+                    <span class="showcase-icon">👻</span>
+                </div>
+                <h3>Horror Survival</h3>
+                <p>Lumen teknolojisi ile atmosferik korku deneyimi</p>
+            </div>
+            <div class="showcase-item">
+                <div class="showcase-thumbnail">
+                    <span class="showcase-icon">⚔️</span>
+                </div>
+                <h3>Medieval Combat</h3>
+                <p>Gerçekçi fizik tabanlı dövüş mekaniği</p>
+            </div>
+            <div class="showcase-item">
+                <div class="showcase-thumbnail">
+                    <span class="showcase-icon">🚀</span>
+                </div>
+                <h3>Space Exploration</h3>
+                <p>Prosedürel oluşturulan evren ile uzay keşfi</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="logo">
+                    <img src="favicon.jpg" alt="Yasir Kasap Logo">
+                    <div class="logo-text">
+                        <h1>YASIR KASAP</h1>
+                        <p class="tagline">Game Developer | Unreal Engine Specialist</p>
+                    </div>
+                </div>
+                <p>Tutkuyla oyun geliştiren, teknolojiyi seven bir developer.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Hızlı Linkler</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Anasayfa</a></li>
+                    <li><a href="projeler.html">Projeler</a></li>
+                    <li><a href="hakkimda.html">Hakkımda</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="iletisim.html">İletişim</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Teknolojiler</h3>
+                <ul class="footer-links">
+                    <li>Unreal Engine 5</li>
+                    <li>C++ / Blueprint</li>
+                    <li>Blender / Maya</li>
+                    <li>Substance Painter</li>
+                    <li>Perforce / Git</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>İletişim</h3>
+                <ul class="footer-links">
+                    <li>📧 yasir.kasap@email.com</li>
+                    <li>🔗 github.com/yasirkasap</li>
+                    <li>💼 www.linkedin.com/in/yasirkasap/</li>
+                    <li>🎬 youtube.com/@kasapoyun</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Yasir Kasap | Game Developer | Tüm hakları saklıdır</p>
+            <p>Made with ❤️ and Unreal Engine | No JavaScript, Pure HTML & CSS</p>
+        </div>
+    </footer>
+    <script src="game.js"></script>
+    <script src="slider.js"></script>
+</body>
+
+</html>

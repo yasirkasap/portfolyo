@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UE5 Nanite & Lumen - Yasir Kasap | Blog</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" type="image/jpeg" href="favicon.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <img src="favicon.jpg" alt="Yasir Kasap Logo">
+                <div class="logo-text">
+                    <h1>YASIR KASAP</h1>
+                    <p class="tagline">Game Developer | Unreal Engine Specialist</p>
+                </div>
+            </div>
+            <input type="checkbox" id="hamburger-toggle" class="hamburger-toggle">
+            <label for="hamburger-toggle" class="hamburger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link">ANASAYFA</a>
+                <div class="dropdown">
+                    <a href="projeler.html" class="nav-link locked-content-trigger" data-game-type="basket">PROJELER</a>
+                    <div class="dropdown-content">
+                        <div class="mega-menu">
+                            <div class="mega-column">
+                                <h3>Unreal Engine 5</h3>
+                                <a href="#ue5-rpg">RPG Oyun Projesi</a>
+                                <a href="#ue5-fps">FPS Multiplayer</a>
+                                <a href="#ue5-horror">Horror Adventure</a>
+                                <a href="#ue5-vr">VR Experience</a>
+                            </div>
+                            <div class="mega-column">
+                                <h3>Unity Projeleri</h3>
+                                <a href="#unity-mobile">Mobile Puzzle Game</a>
+                                <a href="#unity-2d">2D Platform Oyunu</a>
+                                <a href="#unity-ar">AR Uygulaması</a>
+                            </div>
+                            <div class="mega-column">
+                                <h3>Bağımsız Çalışmalar</h3>
+                                <a href="#indie-1">Open World RPG</a>
+                                <a href="#indie-2">Narrative Adventure</a>
+                                <a href="#indie-3">Roguelike Dungeon</a>
+                            </div>
+                            <div class="mega-column">
+                                <h3>Eğitim İçerikleri</h3>
+                                <a href="#tutorial-1">Blueprint Temelleri</a>
+                                <a href="#tutorial-2">C++ ile Gameplay</a>
+                                <a href="#tutorial-3">Lighting & VFX</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="hakkimda.html" class="nav-link">HAKKIMDA</a>
+                <a href="iletisim.html" class="nav-link">İLETİŞİM</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-container single-column">
+        <main class="content" style="width: 100%; max-width: 100%; padding: 0;">
+            <article class="blog-detail-article">
+                <div class="blog-detail-thumbnail">
+                    <div class="thumbnail-icon">🎮</div>
+                </div>
+
+                <div class="blog-detail-content">
+                    <div class="blog-detail-meta">
+                        <span>Unreal Engine 5</span>
+                        <span>•</span>
+                        <span>10 Kasım 2025</span>
+                        <span>•</span>
+                        <span>8 dakika okuma</span>
+                    </div>
+
+                    <h1 class="blog-detail-title">Unreal Engine 5.4'te Nanite ve Lumen ile Photorealistic Ortamlar
+                        Yaratmak</h1>
+
+                    <div class="blog-detail-tags">
+                        <span class="blog-tag">#UnrealEngine</span>
+                        <span class="blog-tag">#Nanite</span>
+                        <span class="blog-tag">#Lumen</span>
+                        <span class="blog-tag">#NextGen</span>
+                    </div>
+
+                    <div class="blog-detail-body">
+                        <p>
+                            Unreal Engine 5'in piyasaya sürülmesiyle birlikte oyun geliştirme dünyasında kartlar
+                            yeniden
+                            dağıtıldı. Özellikle <strong>Nanite</strong> sanallaştırılmış geometri sistemi ve
+                            <strong>Lumen</strong> dinamik global aydınlatma teknolojisi, sanatçıların ve
+                            geliştiricilerin
+                            hayallerindeki dünyaları yaratmalarını her zamankinden daha kolay hale getirdi. Bu
+                            makalede, bu
+                            teknolojilerin derinliklerine ineceğiz.
+                        </p>
+
+                        <h2>Nanite: Poligon Sınırlarını Zorlamak</h2>
+                        <p>
+                            Geleneksel oyun motorlarında, yüksek poligonlu modelleri (ZBrush çıktıları gibi)
+                            doğrudan oyuna
+                            atmak imkansızdı. Normal map baking, LOD (Level of Detail) oluşturma gibi zahmetli
+                            süreçler
+                            gerekiyordu. Nanite bu kuralı değiştiriyor. Artık milyonlarca poligonlu "film
+                            kalitesinde"
+                            asset'leri doğrudan sahneye sürükleyip bırakabiliyoruz.
+                        </p>
+                        <p>
+                            Nanite, geometriyi piksel ölçeğinde stream ederek çalışır. Yani kamera bir objeye
+                            yaklaştıkça
+                            detay artar, uzaklaştıkça azalır; ancak bu işlem o kadar akıcıdır ki oyuncu (ve hatta
+                            geliştirici) "pop-in" etkisi görmez.
+                        </p>
+
+                        <h2>Lumen: Işığın Doğal Dansı</h2>
+                        <p>
+                            Lumen, tamamen dinamik bir global illumination (GI) çözümüdür. Light baking (ışık
+                            pişirme) devri
+                            sona erdi. Bir ışık kaynağını hareket ettirdiğinizde, ışığın sekmeleri (bounce
+                            lighting),
+                            gölgeler ve yansımalar gerçek zamanlı olarak güncellenir.
+                        </p>
+
+                        <div class="blog-highlight-box">
+                            "Lumen sayesinde sanatçılar artık ışık haritalarının derlenmesini ("Building
+                            Lighting...")
+                            saatlerce beklemek zorunda değil. Değişikliği yap ve sonucu anında gör."
+                        </div>
+
+                        <h2>Performans İpuçları</h2>
+                        <ul class="blog-tech-list">
+                            <li>Nanite'ı sadece statik mesh'ler için kullanın (şimdilik).</li>
+                            <li>Lumen performanslıdır ancak "Hardware Ray Tracing" açıldığında GPU maliyeti artar.
+                                Hedef platforma göre ayar yapın.</li>
+                            <li>Overdraw'dan kaçınmak için maskeli materyalleri dikkatli kullanın.</li>
+                        </ul>
+
+                        <p>
+                            Unreal Engine 5.4 ile gelen yeni özelliklerle birlikte, fotorealistik oyunlar yapmak
+                            artık hayal
+                            değil. Bir sonraki projenizde bu teknolojileri denemekten çekinmeyin!
+                        </p>
+                    </div>
+
+                    <div class="blog-footer">
+                        <a href="index.html" class="back-link">← Anasayfaya Dön</a>
+                    </div>
+                </div>
+            </article>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p>&copy; 2025 Yasir Kasap | Game Developer</p>
+        </div>
+    </footer>
+</body>
+
+</html>
